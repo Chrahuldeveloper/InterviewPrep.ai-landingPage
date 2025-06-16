@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 
 const HeroCTA = () => {
   return (
@@ -7,7 +8,8 @@ const HeroCTA = () => {
           Ready to make interviews easier?
         </h1>
         <p className="mb-8 text-lg md:text-xl text-white/90">
-          Join thousands of successful job seekers who are using InterviewQ to land their dream jobs. Start preparing smarter, not harder.
+          Join thousands of successful job seekers who are using InterviewQ to
+          land their dream jobs. Start preparing smarter, not harder.
         </p>
 
         <div className="flex flex-col items-center justify-center gap-3 mb-12 md:flex-row">
@@ -35,9 +37,11 @@ const HeroCTA = () => {
         </div>
       </div>
       <div className="text-center mt-7">
-        <p className="underline text-white font-semibold cursor-pointer">
-          Privacy Policy
-        </p>
+        <Link to={"/privacy"}>
+          <p className="underline text-white font-semibold cursor-pointer">
+            Privacy Policy
+          </p>
+        </Link>
       </div>
     </section>
   );
