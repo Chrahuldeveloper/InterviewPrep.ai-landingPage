@@ -46,7 +46,7 @@ const Home = () => {
               <div className="w-5 h-5 bg-[#10B981] rounded-full"></div>
               <div className="w-5 h-5 bg-[#EC4899] rounded-full"></div>
             </div>
-            <p className="text-sm text-gray-500">10,000+ students trust us</p>
+            <p className="text-sm text-gray-500">1000+ students trust us</p>
             <span className="text-yellow-500">★★★★★</span>
             <span className="text-sm text-gray-500">4.9/5 rating</span>
           </div>
@@ -83,10 +83,6 @@ const Home = () => {
               </p>
             </div>
           </div>
-
-          <button variant="outline" className="w-full mt-4">
-            Generate More Questions
-          </button>
         </div>
       </div>
 
