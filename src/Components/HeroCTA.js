@@ -1,4 +1,3 @@
-import React from "react";
 
 const HeroCTA = () => {
   return (
@@ -19,9 +18,7 @@ const HeroCTA = () => {
             ✓ No account required ✓ Works instantly ✓ 100% Free
           </span>
         </div>
-
         <hr className="w-full max-w-4xl mx-auto mb-10 border-white/30" />
-
         <div className="flex flex-col items-center justify-center gap-12 text-center md:flex-row">
           <div>
             <h2 className="text-3xl font-bold">10,000+</h2>
@@ -36,6 +33,11 @@ const HeroCTA = () => {
             <p className="mt-1 text-white/80">Questions Generated</p>
           </div>
         </div>
+      </div>
+      <div className="text-center mt-7">
+        <p className="underline text-white font-semibold cursor-pointer">
+          Privacy Policy
+        </p>
       </div>
     </section>
   );
