@@ -30,10 +30,6 @@ const HeroCTA = () => {
             <h2 className="text-3xl font-bold">4.9★</h2>
             <p className="mt-1 text-white/80">User Rating</p>
           </div>
-          <div>
-            <h2 className="text-3xl font-bold">50K+</h2>
-            <p className="mt-1 text-white/80">Questions Generated</p>
-          </div>
         </div>
       </div>
       <div className="text-center mt-7">
