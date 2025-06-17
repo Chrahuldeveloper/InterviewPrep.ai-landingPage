@@ -58,7 +58,7 @@ const Home = () => {
               IQ
             </div>
             <div>
-              <h3 className="text-sm font-semibold">InterviewQ Extension</h3>
+              <h3 className="text-sm font-semibold">InterviewPrep Extension</h3>
               <p className="text-xs text-gray-500">Job: Frontend Developer</p>
             </div>
           </div>
@@ -139,7 +139,6 @@ const Home = () => {
           ))}
         </div>
       </div>
-
       <HeroCTA />
     </div>
   );
