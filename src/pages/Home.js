@@ -85,11 +85,8 @@ const Home = () => {
           </div>
         </div>
       </div>
-
       <HowItWorks />
-
       <IconCards />
-
       <div className="py-20 text-center">
         <h2 className="mb-4 text-3xl font-bold">What Our Users Say</h2>
         <p className="mb-12 text-gray-500">
