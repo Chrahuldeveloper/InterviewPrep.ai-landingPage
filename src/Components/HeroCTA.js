@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const HeroCTA = () => {
   return (
-    <section className="bg-gradient-to-r from-[#007AFF] to-[#7A36F2] text-white py-20 px-4 text-center">
+    <section className="bg-gradient-to-r from-purple-700 to-cyan-700 text-white py-20 px-4 text-center">
       <div className="max-w-4xl mx-auto">
         <h1 className="mb-6 text-4xl font-extrabold md:text-5xl">
           Ready to make interviews easier?
@@ -21,7 +21,7 @@ const HeroCTA = () => {
           </span>
         </div>
         <hr className="w-full max-w-4xl mx-auto mb-10 border-white/30" />
-        <div className="flex flex-col items-center justify-center gap-12 text-center md:flex-row">
+        {/* <div className="flex flex-col items-center justify-center gap-12 text-center md:flex-row">
           <div>
             <h2 className="text-3xl font-bold">10,000+</h2>
             <p className="mt-1 text-white/80">Happy Users</p>
@@ -30,7 +30,7 @@ const HeroCTA = () => {
             <h2 className="text-3xl font-bold">4.9★</h2>
             <p className="mt-1 text-white/80">User Rating</p>
           </div>
-        </div>
+        </div> */}
       </div>
       <div className="text-center mt-7">
         <Link to={"/privacy"}>

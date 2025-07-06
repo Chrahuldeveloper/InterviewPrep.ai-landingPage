@@ -1,55 +1,63 @@
-import React from "react";
+import { FaStar } from "react-icons/fa";
 
-const IconCards = () => {
-  const features = [
-    {
-      title: "Saves prep time",
-      desc: "No more hours spent researching potential questions. Get instant, relevant questions in seconds.",
-      bg: "linear-gradient(180deg, #00AEEF 0%, #2D8EFF 100%)",
-      emoji: "⏰",
-    },
-    {
-      title: "Tailored to the job",
-      desc: "Every question is specifically generated based on the job description and requirements.",
-      bg: "linear-gradient(180deg, #B857F9 0%, #FD4680 100%)",
-      emoji: "🎯",
-    },
-    {
-      title: "Boosts confidence",
-      desc: "Walk into interviews feeling prepared and confident with relevant practice questions.",
-      bg: "linear-gradient(180deg, #3AC569 0%, #19C37D 100%)",
-      emoji: "💪",
-    },
-    {
-      title: "Built for students & freshers",
-      desc: "Designed specifically for new graduates and entry-level job seekers starting their careers.",
-      bg: "linear-gradient(180deg, #FC5C4C 0%, #F95C2B 100%)",
-      emoji: "🎓",
-    },
-  ];
+const testimonials = [
+  {
+    name: "Arjun Kumar",
+    title: "CS Graduate, IIT Delhi",
+    text: "This extension saved me hours of prep time! The questions were spot-on for my software engineering interviews.",
+  },
+  {
+    name: "Priya Sharma",
+    title: "Marketing Graduate",
+    text: "As a fresher, I was nervous about interviews. This tool gave me the confidence I needed!",
+  },
+  {
+    name: "Rahul Jain",
+    title: "Data Science Student",
+    text: "Got my first job offer after using this! The questions helped me prepare for exactly what they asked.",
+  },
+];
 
+export default function TestimonialsAndFAQs() {
   return (
-    <div className="bg-[#f8fbff] py-20 px-4">
-      <h2 className="mb-6 text-3xl font-bold text-center md:text-4xl">Why Choose InterviewQ?</h2>
-      <p className="max-w-xl mx-auto mb-12 text-center text-gray-500">
-        Join thousands of students and job seekers who are landing their dream jobs with better interview preparation.
-      </p>
-      <div className="grid max-w-6xl grid-cols-1 gap-8 mx-auto sm:grid-cols-2 md:grid-cols-4">
-        {features.map((item, idx) => (
-          <div key={idx} className="p-6 text-center transition bg-white shadow-md rounded-xl hover:shadow-lg">
-            <div
-              className="flex items-center justify-center w-16 h-16 mx-auto mb-4 text-2xl text-white rounded-full"
-              style={{ background: item.bg }}
-            >
-              {item.emoji}
+    <div className="bg-[#080813] text-white px-4 py-20">
+      <div className="text-center mb-16">
+        <h2 className="text-4xl font-bold">
+          What{" "}
+          <span className="bg-gradient-to-r from-purple-400 to-cyan-400 text-transparent bg-clip-text">
+            Students
+          </span>{" "}
+          Say
+        </h2>
+        <p className="text-gray-400 mt-2">
+          Real feedback from job seekers who landed their dream roles
+        </p>
+      </div>
+
+      <div className="grid gap-6 md:grid-cols-3 max-w-6xl mx-auto ">
+        {testimonials.map((t, idx) => (
+          <div
+            key={idx}
+            className="bg-[#121a33] p-6 rounded-xl border border-[#1d2a45]"
+          >
+            <div className="flex items-center gap-1 mb-4 text-yellow-400">
+              {Array(5)
+                .fill()
+                .map((_, i) => (
+                  <FaStar key={i} size={16} />
+                ))}
             </div>
-            <h3 className="mb-2 text-lg font-semibold">{item.title}</h3>
-            <p className="text-sm text-gray-600">{item.desc}</p>
+            <p className="italic text-sm mb-6">"{t.text}"</p>
+            <div className="flex items-center gap-3">
+              <div className="w-8 h-8 bg-gray-300 rounded-full" />
+              <div>
+                <p className="font-semibold">{t.name}</p>
+                <p className="text-gray-400 text-xs">{t.title}</p>
+              </div>
+            </div>
           </div>
         ))}
       </div>
     </div>
   );
-};
-
-export default IconCards;
+}
